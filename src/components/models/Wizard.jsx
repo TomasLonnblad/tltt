@@ -1,4 +1,3 @@
-
 "use client";
 import React, { useRef } from "react";
 import { useGLTF } from "@react-three/drei";
@@ -7,7 +6,7 @@ import { useFrame } from "@react-three/fiber";
 const Wizard = React.memo(function Wizard(props) {
   // Use React.memo for performance optimization
 
-  const { nodes, materials } = useGLTF('models20/19.glb')
+  const { nodes, materials } = useGLTF('models15/19.glb')
 
 
   const modelRef = useRef();
@@ -399,7 +398,7 @@ const Wizard = React.memo(function Wizard(props) {
   );
 })
 export default Wizard;
-useGLTF.preload("/models20/19.glb");
+useGLTF.preload("/models15/19.glb");
 
 
 
